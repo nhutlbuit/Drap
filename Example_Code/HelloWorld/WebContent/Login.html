@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Header1</h1>
+	<script type="text/javascript">
+		function validate() {
+			
+			var username = document.getElementsByName("username")[0].value;
+			var password = document.getElementsByName("password")[0].value;
+			if (username == '') {
+				
+				alert("please input username!");
+				retrun
+				false;
+			}
+			if (password == '') {
+				alert("please input password!");
+				return false;
+			}
+		}
+	</script>
+
+	<form action="LoginServlet" name="Hello" onsubmit="validate();">
+		UserName:<br> <input type="text" name="username">
+		<br>Password:<br>
+		<input type="password" name="password"> <br>
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>

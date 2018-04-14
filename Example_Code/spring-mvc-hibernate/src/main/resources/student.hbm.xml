@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="model.Student" table="student">
+		<id name="id" type="int">
+			<column name="student_id" />
+			<generator class="identity" />
+		</id>
+		<property name="firstname" type="string">
+			<column name="firstname" not-null="true" unique="true" />
+		</property>
+		<property name="lastname" type="string">
+			<column name="lastname" not-null="true" unique="true" />
+		</property>
+
+		<property name="age" type="int">
+			<column name="age" not-null="true" unique="true" />
+		</property>
+		<property name="sex" type="boolean">
+			<column name="sex" not-null="true" unique="true" />
+		</property>
+		<property name="username" type="string">
+			<column name="username" not-null="true" unique="true" />
+		</property>
+		<property name="password" type="string">
+			<column name="password" not-null="true" unique="true" />
+		</property>
+
+		<one-to-one name="address" class="model.Address" cascade="save-update"></one-to-one>
+
+		<set name="scores" table="score" inverse="true" lazy="true" fetch="select">
+			<key>
+				<column name="score_id" not-null="true" />
+			</key>
+			<one-to-many class="model.Score" />
+		</set>
+
+
+	</class>
+</hibernate-mapping>
+

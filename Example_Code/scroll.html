@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="show" type="button" onclick="showing()">Nội Dung Truyện</button>
+<button id="hidden" type="button" onclick="hidding()" >Ẩn Nội Dung</button>
+
+<p id ="contents" style="display: none" >Tần thời Minh Nguyệt (tiếng Trung: 秦时明月;bính âm: qín shí míng yuè), tên tiếng Anh là Qin's Moon là một loạt phim hoạt hình CG Trung Hoa. Kịch bản phim dựa trên tiểu thuyết cùng tên của một tác gia người Đài Loan là Ôn Thế Nhân (溫世仁 - Wen Shiren). Đây là một phim hoạt hình võ thuật 3D đầu tiên của đất nước Trung Hoa, được sản xuất bởi công ty khoa kĩ Huyền cơ Hàn Châu(Hangzhou StarQ) ở Hàn Châu, Chiết Giang. Tiêu đề phim mang ý nghĩa là "Thời Tần Trăng Sáng", được trích từ một bài thơ nổi tiếng. Phim đề cập đến tên của hai vị anh hùng: Minh trong Thiên Minh, Nguyệt trong Nguyệt Nhi.
+
+Loạt phim truyền hình này được chiếu rộng khắp Trung Hoa vào dịp Năm mới 2007.[1] Bối cảnh loạt phim truyền hình này được bắt đầu từ việc xây dựng đế chế đầu tiên của Trung Hoa: nhà Tần và kết thúc khi kinh đô Hàm Dương bị xâm nhập bởi quân lính nhà Chu. Hành trình của loạt phim này kéo dài 30 năm (cả phần ký ức). Phim cho ta biết tên một bậc hảo hán tên là Thiên Minh, mang dòng máu anh hùng, trưởng thành và cũng thành một bậc anh hùng cũng như sự thay đổi phát triển của lịch sử và tài năng của anh ấy. Nó là một loạt phim truyền hình khơi gợi cảm hứng là sự kết hợp giữa võ hiệp, viễn tưởng và lịch sử với nhau và dẫn dắt khán giả đến những sự cao trào của câu chuyện cũng như vẻ hoa lệ và xinh đẹp cổ kính của thế giới Trung Hoa 2 nghìn năm trước.</p>
+
+<style type="text/css">
+.container  {
+    margin: 0;
+    padding: 6px;
+    border: 1px inset;
+    text-align: left;
+  	overflow: scroll;
+    direction: ltr;
+    background: #f2f6f8 none repeat-x;
+    font-size: 12px;
+    height: 100%;
+}	
+</style>
+
+<pre class="container"  id="showContentInHere">
+<form>
+  What color do you prefer?<br>
+  <input type="radio" name="colors" id="red">Red<br>
+  <input type="radio" name="colors" id="blue">Blue
+</form>
+</pre>
+
+<script type="text/javascript">
+   document.getElementById("hidden").style.display = "none";
+   document.getElementById("show").style.display = "block";
+   
+  function showing() {
+    var val = document.getElementById("contents").innerHTML;
+    document.getElementById("hidden").style.display = "block";
+    document.getElementById("show").style.display = "none";
+    document.getElementById("showContentInHere").innerHTML = val;
+  }
+  function hidding() {
+    var val = document.getElementById("contents").innerHTML;
+    document.getElementById("hidden").style.display = "none";
+    document.getElementById("show").style.display = "block";
+     document.getElementById("showContentInHere").innerHTML = "";
+  }
+
+</script>
+
+<button id="show" type="button" >Modify</button>
+<button id="show" type="button" >Delete</button>
+<button id="show" type="button" >Terminate</button>
+<button id="show" type="button" >Reintate</button>
+
+</body>
+</html> 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+       
+    });
+
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+       
+});
+</script>
+</script>
+  <script>
+  $( function() {
+    $( document ).tooltip();
+  } );
+  </script>
+  <style>
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  </style>
+</head>
+<body>
+
+<p>Name: <input id ="name" type="text" name="fullname" title="Enter your name."></p>
+<p>Email: <input id ="email"  type="text" name="email" title="Enter your email."></p>
+<p><label for="age">Your age:</label><input id="age" title="Enter your age."></p>
+
+
+
+</body>
+</html>

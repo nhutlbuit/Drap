@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/simplewebapp/conn/ConnectionUtils.java=UTF-8
+encoding//src/simplewebapp/conn/MySQLConnUtils.java=UTF-8
+encoding//src/simplewebapp/filter/CookieFilter.java=UTF-8
+encoding//src/simplewebapp/filter/JDBCFilter.java=UTF-8
+encoding//src/simplewebapp/servlet/DoLoginServlet.java=UTF-8
+encoding//src/simplewebapp/servlet/HomeServlet.java=UTF-8
+encoding//src/simplewebapp/servlet/LoginServlet.java=UTF-8
+encoding//src/simplewebapp/servlet/UserInfoServlet.java=UTF-8
+encoding//src/simplewebapp/utils/MyUtils.java=UTF-8
